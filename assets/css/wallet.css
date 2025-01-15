@@ -1,0 +1,149 @@
+.wallet-container {
+    background-color: #fff;
+    padding: 0px;
+}
+
+.wallet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.wallet-balance {
+    font-size: 2em;
+    color: #333;
+}
+
+.wallet-balance h3 {
+    color: #666666;
+}
+
+.wallet-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.wallet-buttons button, .topupbtn, .withdrawbtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wallet-buttons .topup, .topupbtn {
+    background-color: #4CAF50; /* Green */
+    border-radius: 20px;
+}
+
+.wallet-buttons .topup:hover, .topupbtn:hover {
+    background-color: #45a049;
+}
+
+.topupbtn, .withdrawbtn {
+    float: right;
+}
+
+.wallet-buttons .withdraw, .withdrawbtn {
+    background-color: #f44336;
+    border-radius: 20px;
+}
+
+.wallet-buttons .withdraw:hover, .withdrawbtn:hover {
+    background-color: #d32f2f;
+}
+
+.topupsection, .withdrawsection {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topupsection {
+    background-color: #D1FFBD;
+    box-shadow: 0 0 10px rgba(144, 238, 144, 0.6);
+}
+
+.withdrawsection {
+    background-color: #FFD1D1;
+    box-shadow: 0 0 10px rgba(238, 144, 144, 0.6);
+}
+
+.quickbutton {
+    padding: 10px 0px;
+    display: flex;
+    gap: 15px;
+}
+
+.topup_valuebox, .wtdw_valuebox {
+    display: flex;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.topup_value, .withdraw_value {
+    height: 100%;
+    width: 90%;
+    border-radius:10px;
+}
+
+.quickbutton button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.quickbutton button:hover {
+    color: white;
+    background-color: green !important;
+}
+
+.wallet-transactions {
+    padding: 20px 0px;
+    border-radius: 8px;
+}
+
+.wallet-transactions h3 {
+    margin-top: 0;
+}
+
+.wallet-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wallet-transactions th, .wallet-transactions td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.wallet-transactions th {
+    background-color: #f2f2f2;
+}
+
+.wallet-transactions tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

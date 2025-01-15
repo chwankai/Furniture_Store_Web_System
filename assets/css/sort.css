@@ -1,0 +1,36 @@
+.sort {
+    display: flex;
+    font-family: 'FjallaOneRegular';
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line if needed */
+}
+
+.sort > div:first-child {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.sort_button {
+    background-color: white; /* Bootstrap primary color */
+    color: #555;
+    border: 2px solid orange;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 5px; /* Adjusted for better spacing */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sort_button:hover {
+    background-color: orange; /* Darker shade of the primary color */
+    color: white;
+    transform: scale(1.05);
+}
+
+.sort_button:focus {
+    outline: none;
+}

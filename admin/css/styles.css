@@ -1,0 +1,166 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a global font family */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background: linear-gradient(-45deg,#e67e22, #f7a521, #e74c3c, #ec6d0b);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Login container styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Login card styles */
+.login-card {
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    text-align: center; /* Center align content inside the card */
+}
+
+/* Header and Footer styles within the card */
+.header {
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(5px);
+    color: #f39c12;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: left; /* Center the logo horizontally */
+    
+}
+
+.header .logo a{
+    display: flex;
+    align-items: center; /* Ensure the anchor tag centers its content vertically */
+    justify-content: flex-start; /* Align content to the left */
+    height: 100%; /* Ensure the anchor tag takes the full height of the container */
+    text-decoration: none; /* Optional: remove underline from links */
+}
+
+.header .logo img {
+    max-height: 50px; /* Adjust as necessary */
+    height: auto;
+    width: auto;
+}
+
+.header .back-button {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    margin-left: auto; /* Align to the right */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Add transition for smooth fading effect */
+}
+
+.header .back-button:hover {
+    background-color: #fd851c;
+    border: 1px solid #fd851c;
+    color: #fff;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, .15);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+/* Form styles */
+.login-form {
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Center align input fields */
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.input-group input {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+::placeholder{
+    color:#cccccccf;
+}
+
+.login-button {
+    background-color: rgba(255, 255, 255, .20);
+    color: #fff;
+    padding: 10px 80px;
+    border: 0px solid white;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Add transition for smooth fading effect */
+}
+
+.login-button:hover {
+    background-color: #fd851c;
+    color: #fff;
+    border: #fd851c 1px;
+}
+
+/* Adjust layout on smaller screens */
+@media (max-width: 600px) {
+    .login-card {
+        width: 90%;
+    }
+}
+.error-msg {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
