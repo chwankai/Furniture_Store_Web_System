@@ -43,8 +43,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `creationDate`, `updationDate`, `role`, `email`, `Status`) VALUES
-(1001, 'admin', 'f925916e2754e5e03f75dd58a5733251', '2017-01-24 16:21:18', '21-06-2018 08:27:55 PM', 'SuperAdmin', 'ofurstore@gmail.com', 'Active'),
-(1002, 'CK (Admin)', 'bd9d2ee413e7466a5f97efd5b62cb717', '2024-06-17 11:20:40', NULL, 'NormalAdmin', 'chwankai09132@gmail.com', 'Active');
+(1001, 'admin', '123', '2017-01-24 16:21:18', '21-06-2018 08:27:55 PM', 'SuperAdmin', '1234@gmail.com', 'Active'),
+(1002, 'CK (Admin)', '123', '2024-06-17 11:20:40', NULL, 'NormalAdmin', '123@gmail.com', 'Active');
 
 -- --------------------------------------------------------
 
@@ -435,8 +435,8 @@ CREATE TABLE `userlog` (
 --
 
 INSERT INTO `userlog` (`id`, `userEmail`, `loginTime`, `logout`, `status`) VALUES
-(8001, 'chwankai09132@gmail.com', '2024-06-17 11:14:06', '17-06-2024 07:20:43 PM', 1),
-(8002, 'chwankai09132@gmail.com', '2024-06-17 11:22:38', '17-06-2024 07:25:29 PM', 1),
+(8001, '123@gmail.com', '2024-06-17 11:14:06', '17-06-2024 07:20:43 PM', 1),
+(8002, '123@gmail.com', '2024-06-17 11:22:38', '17-06-2024 07:25:29 PM', 1),
 (8003, '1211207735@student.mmu.edu.my', '2024-06-17 11:27:16', NULL, 1);
 
 -- --------------------------------------------------------
@@ -476,8 +476,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `contactno`, `password`, `shippingAddress`, `shippingState`, `shippingCity`, `shippingPincode`, `billingAddress`, `billingState`, `billingCity`, `billingPincode`, `regDate`, `updationDate`, `reset_token_hash`, `reset_token_expires_at`, `shippingReceiver`, `shippingPhone`, `billingReceiver`, `billingPhone`, `birthday`, `balance`) VALUES
-(9001, 'Chwan Kai', 'chwankai09132@gmail.com', 60167406628, 'f925916e2754e5e03f75dd58a5733251', '3, Jalan Sarawak 2', 'Sarawak', 'Bintulu', 67059, '3, Jalan Sarawak 2', 'Sarawak', 'Bintulu', 67059, '2024-06-17 11:13:10', NULL, NULL, NULL, 'Muthu', '+60167403399', 'Muthu', '+60167403399', '2002-01-11', 120.01),
-(9002, 'CK Test account', '1211207735@student.mmu.edu.my', 601111111111, 'f925916e2754e5e03f75dd58a5733251', 'Jalan Maluri, Taman Conot', 'Selangor', 'Kajang', 28304, 'Jalan Maluri, Taman Conot', 'Selangor', 'Kajang', 28304, '2024-06-17 11:13:57', NULL, NULL, NULL, 'CK Test account', '+601111111111', 'CK Test account', '+601111111111', '2002-07-11', 0.00);
+(9001, 'Chwan Kai', '123@gmail.com', 60167401234, '123', '3, Jalan Sarawak 2', 'Sarawak', 'Bintulu', 67059, '3, Jalan Sarawak 2', 'Sarawak', 'Bintulu', 67059, '2024-06-17 11:13:10', NULL, NULL, NULL, 'Muthu', '+60167403399', 'Muthu', '+60167403399', '2002-01-11', 120.01),
+(9002, 'CK Test account', '1211207735@student.mmu.edu.my', 601111111111, '123', 'Jalan Maluri, Taman Conot', 'Selangor', 'Kajang', 28304, 'Jalan Maluri, Taman Conot', 'Selangor', 'Kajang', 28304, '2024-06-17 11:13:57', NULL, NULL, NULL, 'CK Test account', '+601111111111', 'CK Test account', '+601111111111', '2002-07-11', 0.00);
 
 -- --------------------------------------------------------
 
